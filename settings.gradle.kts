@@ -5,6 +5,7 @@ pluginManagement {
                 includeGroupByRegex("com\\.android.*")
                 includeGroupByRegex("com\\.google.*")
                 includeGroupByRegex("androidx.*")
+                excludeGroupByRegex("com\\.google\\.devtools\\.ksp.*")
             }
         }
         mavenCentral()
@@ -25,7 +26,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "RecipeBox"
 include(":app")
-include(":core:netowrk")
+include(":core:network")
 include(":core:database")
 include(":core:navigation")
 include(":feature:recipelist")
